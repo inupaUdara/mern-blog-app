@@ -10,6 +10,7 @@ import FooterCom from "./components/Footer";
 import PrivateRoute from "./components/PrivateRoute";
 import OnlyAdminPrivateRoute from "./components/OnlyAdminPrivateRoute";
 import CreatePost from "./pages/CreatePost";
+import PostPage from "./pages/PostPage";
 
 export default function App() {
   return (
@@ -27,6 +28,7 @@ export default function App() {
           <Route path="/create-post" element={<CreatePost />} />
         </Route>
         <Route path="/project" element={<Project />} />
+        <Route path='/post/:postSlug' element={<PostPage />} />
       </Routes>
       <FooterCom />
     </BrowserRouter>
