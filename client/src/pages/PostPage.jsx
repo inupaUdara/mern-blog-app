@@ -1,7 +1,7 @@
 import { Button, Spinner } from 'flowbite-react';
 import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-// import CallToAction from '../components/CallToAction';
+import CallToAction from '../components/CallToAction';
 // import CommentSection from '../components/CommentSection';
 // import PostCard from '../components/PostCard';
 
@@ -83,10 +83,7 @@ export default function PostPage() {
       </div>
       <div
         className='p-3  mx-auto w-full max-w-2xl post-content'
-      >
-        <div
         dangerouslySetInnerHTML={{ __html: post && post.content }}
       ></div>
-      </div>
     </main>
   );}

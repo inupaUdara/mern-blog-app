@@ -80,6 +80,7 @@ export default function SignIn() {
                 id="password"
                 onChange={handleChange}
               />
+            
             </div>
             <Button gradientDuoTone="purpleToPink" type="submit" disabled={loading}>
               {loading ? (<><Spinner size='sm'/><span>Loading...</span></>) : "Sign In"}
